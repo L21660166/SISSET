@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import {useRouter} from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faCogs, 
@@ -54,15 +55,15 @@ const NavbarAdmin = () => {
     if (confirm('¿Estás seguro de que deseas cerrar sesión?')) {
       alert('Sesión cerrada correctamente');
       // Aquí iría la lógica para cerrar sesión
-      // router.push('/logout');
+      router.push('/auth/login');
     }
   };
 
   const navItems = [
-    { id: 'resumen', href: '#', icon: faHome, text: 'Resumen' },
-    { id: 'usuarios', href: '#', icon: faUsers, text: 'Usuarios' },
-    { id: 'sucursales', href: '#', icon: faBuilding, text: 'Sucursales' },
-    { id: 'configuracion', href: '#', icon: faCog, text: 'Configuración' }
+    { id: 'resumen', href: '/dashboard/administrador', icon: faHome, text: 'Inicio' },
+    { id: 'usuarios', href: '/dashboard/administrador/usuarios', icon: faUsers, text: 'Usuarios' },
+    { id: 'sucursales', href: '/dashboard/administrador/sucursales', icon: faBuilding, text: 'Sucursales' },
+    { id: 'configuracion', href: '/dashboard/administrador/configuracion', icon: faCog, text: 'Configuración' }
   ];
 
   return (

@@ -114,7 +114,7 @@ const NavbarSupervisor = () => {
               <FontAwesomeIcon icon={faCog} />
               Configuración
             </button>
-            <div classNa me={styles.dropdownDivider}></div>
+            <div className={styles.dropdownDivider}></div>
             <button className={styles.dropdownItem} onClick={handleLogout}>
               <FontAwesomeIcon icon={faSignOutAlt} />
               Cerrar Sesión

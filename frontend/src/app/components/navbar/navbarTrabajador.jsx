@@ -31,12 +31,12 @@ const NavbarTrabajador = () => {
   };
 
   const navItems = [
-    { id: 'inicio', href: '#', icon: faHome, text: 'Inicio' },
-    { id: 'mis-turnos', href: '#', icon: faClipboardList, text: 'Mis Turnos' },
-    { id: 'tareas', href: '#', icon: faTasks, text: 'Tareas' },
-    { id: 'incidencias', href: '#', icon: faExclamationTriangle, text: 'Incidencias' },
-    { id: 'evidencias', href: '#', icon: faCamera, text: 'Evidencias' },
-    { id: 'configuracion', href: '#', icon: faCog, text: 'Configuración' }
+    { id: 'inicio', href: '/dashboard/trabajador', icon: faHome, text: 'Inicio' },
+    { id: 'mis-turnos', href: '/dashboard/trabajador/turnos', icon: faClipboardList, text: 'Mis Turnos' },
+    { id: 'tareas', href: '/dashboard/trabajador/actividades', icon: faTasks, text: 'Tareas' },
+    { id: 'incidencias', href: '/dashboard/trabajador/incidencias', icon: faExclamationTriangle, text: 'Incidencias' },
+    { id: 'evidencias', href: '/dashboard/trabajador/evidencias', icon: faCamera, text: 'Evidencias' },
+    { id: 'configuracion', href: '/dashboard/trabajador/configuracion', icon: faCog, text: 'Configuración' }
   ];
 
   return (
